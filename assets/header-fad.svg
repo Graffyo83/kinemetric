@@ -1,0 +1,58 @@
+<svg width="1600" height="260" viewBox="0 0 1600 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Header del corso FAD</title>
+  <desc id="desc">Banner istituzionale con motivi geometrici e campiture blu, verde e bianco.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0d4f7d"/>
+      <stop offset="30%" stop-color="#124d7a"/>
+      <stop offset="100%" stop-color="#1b5d4b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="260" fill="url(#bg)"/>
+
+  <g opacity="0.9">
+    <rect x="0" y="0" width="120" height="260" fill="#0a3d5d"/>
+    <rect x="120" y="0" width="120" height="260" fill="#0f5a88"/>
+    <rect x="240" y="0" width="120" height="260" fill="#1a6a9a"/>
+    <rect x="360" y="0" width="120" height="260" fill="#0c4f77"/>
+    <rect x="480" y="0" width="120" height="260" fill="#1b5d4b"/>
+    <rect x="600" y="0" width="120" height="260" fill="#0c4d6a"/>
+    <rect x="720" y="0" width="120" height="260" fill="#1e7d68"/>
+    <rect x="840" y="0" width="120" height="260" fill="#0d4574"/>
+    <rect x="960" y="0" width="120" height="260" fill="#1f6d95"/>
+    <rect x="1080" y="0" width="120" height="260" fill="#0c4a65"/>
+    <rect x="1200" y="0" width="120" height="260" fill="#236f5b"/>
+    <rect x="1320" y="0" width="120" height="260" fill="#0f587d"/>
+    <rect x="1440" y="0" width="160" height="260" fill="#113d5d"/>
+  </g>
+
+  <g opacity="0.26" stroke="#ffffff" stroke-width="2">
+    <path d="M0 40 H1600"/>
+    <path d="M0 90 H1600"/>
+    <path d="M0 140 H1600"/>
+    <path d="M0 190 H1600"/>
+    <path d="M0 220 H1600"/>
+  </g>
+
+  <g opacity="0.22" fill="#ffffff">
+    <rect x="40" y="32" width="32" height="32"/>
+    <rect x="170" y="72" width="26" height="26"/>
+    <rect x="310" y="120" width="28" height="28"/>
+    <rect x="470" y="48" width="38" height="38"/>
+    <rect x="660" y="100" width="34" height="34"/>
+    <rect x="810" y="54" width="30" height="30"/>
+    <rect x="980" y="130" width="34" height="34"/>
+    <rect x="1120" y="60" width="32" height="32"/>
+    <rect x="1285" y="104" width="40" height="40"/>
+    <rect x="1450" y="40" width="30" height="30"/>
+  </g>
+
+  <g opacity="0.15" fill="#dfeceb">
+    <path d="M0 260 L220 0 H420 L200 260 Z"/>
+    <path d="M300 260 L560 0 H760 L530 260 Z"/>
+    <path d="M620 260 L890 0 H1090 L860 260 Z"/>
+    <path d="M960 260 L1220 0 H1420 L1180 260 Z"/>
+    <path d="M1220 260 L1500 0 H1600 L1600 260 Z"/>
+  </g>
+</svg>
