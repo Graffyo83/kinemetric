@@ -23,8 +23,8 @@
         .topbar-inner, .header-inner, .content { max-width: 1120px; margin: auto; padding-left: 24px; padding-right: 24px; }
         .topbar-inner { min-height: 36px; display: flex; align-items: center; justify-content: space-between; }
         .header { background: white; border-bottom: 1px solid var(--line); }
-        .header-inner { min-height: 112px; display: flex; align-items: center; gap: 20px; justify-content: center; }
-        .header-image { width: 100%; max-width: 900px; height: auto; display: block; }
+        .header-inner { min-height: 112px; display: flex; align-items: center; gap: 20px; }
+        .institution-mark { width: 62px; height: 62px; border: 3px solid var(--blue); color: var(--blue); display: grid; place-items: center; font-weight: 800; font-size: 1.2rem; letter-spacing: -.08em; }
         .eyebrow { margin: 0; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; font-weight: bold; }
         h1, h2, h3 { color: var(--deep-blue); line-height: 1.2; }
         h1 { margin: 5px 0 0; font-size: clamp(1.6rem, 4vw, 2.45rem); }
@@ -52,14 +52,15 @@
         .status { font-weight: bold; color: var(--muted); }
         footer { background: var(--deep-blue); color: white; padding: 28px 24px; font-size: .9rem; }
         footer p { max-width: 1120px; margin: 6px auto; }
-        @media (max-width: 600px) { .topbar-inner { display: block; padding-top: 8px; padding-bottom: 8px; } .header-inner { min-height: 96px; } }
+        @media (max-width: 600px) { .topbar-inner { display: block; padding-top: 8px; padding-bottom: 8px; } .header-inner { min-height: 96px; } .institution-mark { width: 50px; height: 50px; } }
     </style>
 </head>
 <body>
     <div class="topbar"><div class="topbar-inner"><span>Portale formazione sanitaria</span><span>Area riservata</span></div></div>
     <header class="header">
         <div class="header-inner">
-            <img src="assets/image.png" alt="Header del corso FAD obbligatorio" class="header-image">
+            <div class="institution-mark" aria-hidden="true">ER</div>
+            <div><p class="eyebrow">Servizi per la formazione</p><h1>Area corsi FAD</h1></div>
         </div>
     </header>
 
