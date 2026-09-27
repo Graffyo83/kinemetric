@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>Area formazione sanitaria – Corso FAD 2026</title>
+    <style>
+        :root {
+            --blue: #075985;
+            --deep-blue: #123b5d;
+            --red: #c62828;
+            --cream: #f5f6f7;
+            --ink: #243746;
+            --muted: #5e6f7b;
+            --line: #d7e0e6;
+            --green: #176b48;
+        }
+        * { box-sizing: border-box; }
+        body { margin: 0; color: var(--ink); background: var(--cream); font-family: Arial, Helvetica, sans-serif; line-height: 1.55; }
+        a { color: var(--blue); }
+        .topbar { background: var(--deep-blue); color: white; font-size: .86rem; }
+        .topbar-inner, .header-inner, .content { max-width: 1120px; margin: auto; padding-left: 24px; padding-right: 24px; }
+        .topbar-inner { min-height: 36px; display: flex; align-items: center; justify-content: space-between; }
+        .header { background: white; border-bottom: 1px solid var(--line); }
+        .header-inner { min-height: 112px; display: flex; align-items: center; gap: 20px; }
+        .institution-mark { width: 62px; height: 62px; border: 3px solid var(--blue); color: var(--blue); display: grid; place-items: center; font-weight: 800; font-size: 1.2rem; letter-spacing: -.08em; }
+        .eyebrow { margin: 0; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; font-weight: bold; }
+        h1, h2, h3 { color: var(--deep-blue); line-height: 1.2; }
+        h1 { margin: 5px 0 0; font-size: clamp(1.6rem, 4vw, 2.45rem); }
+        .content { padding-top: 28px; padding-bottom: 64px; }
+        .breadcrumb { color: var(--muted); font-size: .9rem; margin-bottom: 24px; }
+        .notice { background: #fff9e6; border-left: 5px solid #e0a100; padding: 14px 18px; margin-bottom: 22px; }
+        .card { background: white; border: 1px solid var(--line); box-shadow: 0 2px 6px rgb(18 59 93 / 8%); padding: clamp(20px, 4vw, 36px); margin-bottom: 24px; }
+        .card h2 { margin-top: 0; font-size: 1.55rem; }
+        .login-card { max-width: 560px; }
+        label { display: block; font-weight: bold; margin: 14px 0 6px; }
+        input { width: 100%; padding: 12px; border: 1px solid #9cafba; border-radius: 2px; font: inherit; }
+        button { border: 0; border-radius: 2px; padding: 12px 20px; background: var(--blue); color: white; font-weight: bold; font-size: 1rem; cursor: pointer; }
+        button:hover { background: var(--deep-blue); }
+        .login-button { margin-top: 20px; }
+        .helper { color: var(--muted); font-size: .9rem; }
+        .error { color: var(--red); min-height: 1.5em; font-weight: bold; }
+        #course { display: none; }
+        .course-meta { display: flex; flex-wrap: wrap; gap: 10px 28px; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); }
+        .video-box { background: #edf3f6; border: 1px dashed #9cafba; min-height: 250px; display: grid; place-items: center; text-align: center; padding: 24px; margin-top: 22px; }
+        .video-box video { width: 100%; max-height: 520px; display: none; }
+        .video-placeholder strong { display: block; color: var(--deep-blue); font-size: 1.15rem; margin-bottom: 8px; }
+        .progress { height: 9px; background: #dbe4e9; margin-top: 18px; }
+        .progress span { display: block; height: 100%; width: 0; background: var(--green); transition: width .2s; }
+        .locked { opacity: .7; }
+        .status { font-weight: bold; color: var(--muted); }
+        footer { background: var(--deep-blue); color: white; padding: 28px 24px; font-size: .9rem; }
+        footer p { max-width: 1120px; margin: 6px auto; }
+        @media (max-width: 600px) { .topbar-inner { display: block; padding-top: 8px; padding-bottom: 8px; } .header-inner { min-height: 96px; } .institution-mark { width: 50px; height: 50px; } }
+    </style>
+</head>
+<body>
+    <div class="topbar"><div class="topbar-inner"><span>Portale formazione sanitaria</span><span>Area riservata</span></div></div>
+    <header class="header">
+        <div class="header-inner">
+            <div class="institution-mark" aria-hidden="true">ER</div>
+            <div><p class="eyebrow">Servizi per la formazione</p><h1>Area corsi FAD</h1></div>
+        </div>
+    </header>
+
+    <main class="content">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Area riservata / Corso FAD</p>
+        <div class="notice"><strong>Nota:</strong> questa è una pagina dimostrativa non ufficiale, predisposta per il caricamento dei materiali del corso.</div>
+
+        <section id="login" class="card login-card" aria-labelledby="login-title">
+            <h2 id="login-title">Accesso all'area riservata</h2>
+            <p>Inserisci le tue credenziali per accedere al corso di formazione.</p>
+            <form id="login-form">
+                <label for="username">Nome utente</label>
+                <input id="username" name="username" autocomplete="username" required>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required>
+                <p id="login-error" class="error" role="alert"></p>
+                <button class="login-button" type="submit">Accedi</button>
+            </form>
+            <p class="helper">Per questa anteprima è possibile utilizzare una qualsiasi combinazione di nome utente e password.</p>
+        </section>
+
+        <section id="course" aria-labelledby="course-title">
+            <div class="card">
+                <p class="eyebrow">Corso FAD obbligatorio · Edizione 2026/II</p>
+                <h2 id="course-title">Modulo Integrativo</h2>
+                <div class="course-meta"><span><strong>Modalità:</strong> online</span><span><strong>Durata prevista:</strong> circa 3 minuti</span><span><strong>Stato:</strong> da completare</span></div>
+                <p>Guarda il video integralmente. Al termine della riproduzione sarà abilitato il test di verifica dell'apprendimento.</p>
+                <div class="video-box">
+                    <video id="course-video" controls preload="metadata" aria-label="Corso FAD obbligatorio (Edizione 2026/II) – Modulo Integrativo">
+                        <!-- Inserire qui il file video fornito, ad esempio: <source src="assets/corso-fad-2026-2.mp4" type="video/mp4"> -->
+                    </video>
+                    <div id="video-placeholder" class="video-placeholder"><strong>Video in attesa di caricamento</strong><span>Il video “Corso FAD obbligatorio (Edizione 2026/II) – Modulo Integrativo” verrà inserito qui.</span></div>
+                </div>
+                <div class="progress" aria-label="Avanzamento video"><span id="progress-bar"></span></div>
+                <p id="video-status" class="status">Il test sarà disponibile dopo la visione completa del video.</p>
+            </div>
+
+            <div id="test-card" class="card locked" aria-labelledby="test-title">
+                <h2 id="test-title">Test di verifica</h2>
+                <p>Il test verrà reso disponibile dopo il caricamento e la visione completa del video.</p>
+                <button type="button" disabled>Test non ancora disponibile</button>
+            </div>
+        </section>
+    </main>
+
+    <footer><p><strong>Area corsi FAD</strong></p><p>Pagina dimostrativa per il progetto Kinemetric · Materiali in preparazione</p></footer>
+    <script>
+        const loginForm = document.getElementById('login-form');
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('course').style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const video = document.getElementById('course-video');
+        const placeholder = document.getElementById('video-placeholder');
+        const progressBar = document.getElementById('progress-bar');
+        const status = document.getElementById('video-status');
+        const testCard = document.getElementById('test-card');
+        video.addEventListener('loadedmetadata', () => { placeholder.style.display = 'none'; video.style.display = 'block'; });
+        video.addEventListener('timeupdate', () => { if (video.duration) progressBar.style.width = `${(video.currentTime / video.duration) * 100}%`; });
+        video.addEventListener('ended', () => {
+            status.textContent = 'Video completato. Il test è pronto per essere configurato.';
+            status.style.color = 'var(--green)';
+            testCard.classList.remove('locked');
+        });
+    </script>
+</body>
+</html>
