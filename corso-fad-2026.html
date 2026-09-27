@@ -23,8 +23,8 @@
         .topbar-inner, .header-inner, .content { max-width: 1120px; margin: auto; padding-left: 24px; padding-right: 24px; }
         .topbar-inner { min-height: 36px; display: flex; align-items: center; justify-content: space-between; }
         .header { background: white; border-bottom: 1px solid var(--line); }
-        .header-inner { min-height: 112px; display: flex; align-items: center; gap: 20px; }
-        .institution-mark { width: 62px; height: 62px; border: 3px solid var(--blue); color: var(--blue); display: grid; place-items: center; font-weight: 800; font-size: 1.2rem; letter-spacing: -.08em; }
+        .header-inner { min-height: 112px; display: flex; align-items: center; gap: 20px; justify-content: center; }
+        .header-image { width: 100%; max-width: 900px; height: auto; display: block; }
         .eyebrow { margin: 0; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; font-weight: bold; }
         h1, h2, h3 { color: var(--deep-blue); line-height: 1.2; }
         h1 { margin: 5px 0 0; font-size: clamp(1.6rem, 4vw, 2.45rem); }
@@ -52,15 +52,14 @@
         .status { font-weight: bold; color: var(--muted); }
         footer { background: var(--deep-blue); color: white; padding: 28px 24px; font-size: .9rem; }
         footer p { max-width: 1120px; margin: 6px auto; }
-        @media (max-width: 600px) { .topbar-inner { display: block; padding-top: 8px; padding-bottom: 8px; } .header-inner { min-height: 96px; } .institution-mark { width: 50px; height: 50px; } }
+        @media (max-width: 600px) { .topbar-inner { display: block; padding-top: 8px; padding-bottom: 8px; } .header-inner { min-height: 96px; } }
     </style>
 </head>
 <body>
     <div class="topbar"><div class="topbar-inner"><span>Portale formazione sanitaria</span><span>Area riservata</span></div></div>
     <header class="header">
         <div class="header-inner">
-            <div class="institution-mark" aria-hidden="true">ER</div>
-            <div><p class="eyebrow">Servizi per la formazione</p><h1>Area corsi FAD</h1></div>
+            <img src="assets/image.png" alt="Header del corso FAD obbligatorio" class="header-image">
         </div>
     </header>
 
@@ -92,7 +91,7 @@
                     <video id="course-video" controls preload="metadata" aria-label="Corso FAD obbligatorio (Edizione 2026/II) – Modulo Integrativo">
                         <!-- Inserire qui il file video fornito, ad esempio: <source src="assets/corso-fad-2026-2.mp4" type="video/mp4"> -->
                     </video>
-                    <div id="video-placeholder" class="video-placeholder"><strong>Video in attesa di caricamento</strong><span>Il video “Corso FAD obbligatorio (Edizione 2026/II) – Modulo Integrativo” verrà inserito qui.</span></div>
+                    <div id="video-placeholder" class="video-placeholder"><strong>Video in attesa di caricamento</strong><span>Il video "Corso FAD obbligatorio (Edizione 2026/II) – Modulo Integrativo" verrà inserito qui.</span></div>
                 </div>
                 <div class="progress" aria-label="Avanzamento video"><span id="progress-bar"></span></div>
                 <p id="video-status" class="status">Il test sarà disponibile dopo la visione completa del video.</p>
